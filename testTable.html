@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>jStormish</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/aos.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/main.css">
+     <link rel="stylesheet" href="css/utilities.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/responsive.css">
+
+
+</head>
+<style media="screen">
+  .result tr[visible=false],.no-result{
+    display:none;
+  }
+  .result tr[visible=true]{
+    display: table-row;
+  }
+  .counter  {
+    padding:8px;
+    color: #fff;
+  }
+</style>
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50" data-simplebar>
+
+<div class="container" style="margin-top:35px">
+  <div class="form-group pull-right">
+    <input type="text" name="" value="" class="search form-control" placeholder="search data..."/>
+  </div>
+  <span class="counter pull-right"></span>
+  <table class="table table-bordered table-striped result">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Adress</th>
+      </tr>
+      <tr class="no-result warning">
+          <td class="colspan="5">No data to display</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Sindy Bayonne</td>
+        <td>bayonnesindy96@gmail.com</td>
+        <td>46789809</td>
+        <td>Delmas 33</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Joe Bayonne</td>
+        <td>bayonnesindy96@gmail.com</td>
+        <td>46789809</td>
+        <td>Delmas 33</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Sarah Bayonne</td>
+        <td>bayonnesindy96@gmail.com</td>
+        <td>46789809</td>
+        <td>Delmas 33</td>
+      </tr>
+      <tr>
+        <th scope="row">4</th>
+        <td>Bill Bayonne</td>
+        <td>bayonnesindy96@gmail.com</td>
+        <td>46789809</td>
+        <td>Delmas 33</td>
+      </tr>
+      <tr>
+        <th scope="row">5</th>
+        <td>Sadra Bayonne</td>
+        <td>bayonnesindy96@gmail.com</td>
+        <td>46789809</td>
+        <td>Delmas 33</td>
+      </tr>
+      <tr>
+        <th scope="row">6</th>
+        <td>Hans Bayonne</td>
+        <td>bayonnesindy96@gmail.com</td>
+        <td>46789809</td>
+        <td>Delmas 33</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+
+<script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
+    <script>
+      $(document).ready(function(){
+
+        $('.search').keyup(function(){
+          var searchTerm = $(".search").val();
+          var listItem = $('.result tbody').children('tr');
+          var searchSplit = searchTerm.replace(/ /g,"'):containsi('");
+          $.extend($.expr[':'],{
+            'containsi': function(elem,i,match,array){
+              return (elem.textContent || elem.innerText || '').toLowerCase().indexOf((match[3] || "").toLowerCase()) >= 0;
+            }
+          });
+          $(".result tbody tr").not(":containsi('"+ searchSplit +"')").each(function(){
+            $(this).attr('visible','false');
+          });
+          $(".result tbody tr:containsi('"+ searchSplit +"')").each(function(){
+            $(this).attr('visible','true');
+          });
+          var jobCount = $('.result tbody tr[visible="true"]').length;
+          $('.counter').text(jobCount + ' item');
+          if(jobCount == 0){
+            $('no-result').show();
+          }else{
+            $('no-result').hide();
+          }
+        });
+
+      });
+    </script>
+</body>
+</html>

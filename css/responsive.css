@@ -1,0 +1,166 @@
+ /*---------------------------------------
+     RESPONSIVE STYLES              
+  -----------------------------------------*/
+
+  @media screen and (max-width: 992px) {
+
+    .section {
+      padding: 5rem 0;
+    }
+
+    .nav-item .nav-link {
+      padding: 6px;
+    }
+
+   
+
+    .navbar-collapse,
+    .site-footer {
+      text-align: center;
+    }
+
+    .schedule-table {
+      display: block;
+    }
+
+    .modal-content {
+      padding: 2rem;
+    }
+    .section-title{
+        margin-bottom: 30px;
+    }
+    .card-base{   
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    .card-base img{
+        object-fit: cover;
+    }
+    .card-box-bordered { 
+        margin-bottom: 20px;
+       }
+ 
+    .avatar-box {
+        position: absolute;
+        bottom: 15px;
+    }
+    .backToTop-container{
+        right: 5px;
+         bottom: 5px;
+      }
+      .about-profil .profil-img {
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 20px;
+      }
+
+      .about-profil .profil-img img {
+        object-fit: cover;
+      }
+
+      .about-me {
+        margin-top: -90px;
+      }
+
+     .services{
+      margin-top: -90px;
+     }
+    .works {
+      margin-top: -90px;
+    }
+    ._newsletter {
+      margin-top: -90px;
+    }
+    .contact{
+      margin-top: -90px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+
+    h1 {
+      font-size: 38px;
+    }
+
+
+    .contact h2 span {
+      display: block;
+    }
+    .section-title{
+        margin-bottom: 30px;
+    }
+    .card-box-bordered { 
+     margin-bottom: 20px;
+    }
+    .card-base{   
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    .card-base img{
+        object-fit: cover;
+    }
+    /*testimoni*/
+    .avatar-box {
+        position: absolute;
+        bottom: 20px;
+    }
+   
+    /*footer*/
+    .footer-content{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .site-footer .navigation .footer-logo{
+        display: none;
+    }
+    .site-footer .navigation{
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+        flex-wrap: wrap;
+      }
+      .site-footer .navigation a{
+       text-align: center;
+        margin: 0 0 10px 10px;
+       font-size: 12px;
+      }
+      .site-footer .icon-contact span{
+        display: none;
+      }
+      .site-footer .icon-contact{
+        width: 100%;
+        justify-content: center;
+      }
+
+      .backToTop-container{
+        right: 35px;
+         bottom: 5px;
+      }
+      .about-profil .profil-img {
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 20px;
+      }
+      .about-profil .profil-img img{
+        object-fit: cover;
+      }
+      .about-me{
+        margin-top: -90px;
+      }
+      .works{
+        margin-top: -90px;
+      }
+      ._newsletter{
+        margin-top: -90px;
+      }
+  }
+
+  @media screen and (max-width: 1200px){
+    .card-base{
+        height: 380px;
+    }
+    .card-base img{
+        object-fit: cover;
+    }
+  }
+

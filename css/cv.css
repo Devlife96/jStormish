@@ -1,0 +1,293 @@
+.cv-download{
+    width: 100%;
+    text-align: end;
+}
+.cv-download span{
+    color: var(--gray-color);
+    margin-right: 7px;
+}
+.cv-title-header{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+.cv-container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 40px;
+}
+
+.cv-container .left-side{
+    position: relative;
+    background: var(--secondary-color);
+    padding: 40px;
+}
+
+.profil-text-container{
+    border-bottom: 1px solid var(--gray-color);
+}
+.profil-text-user-login{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    place-items: center;
+    position: relative;
+    border: 2px solid var(--dark-gray);
+  }
+  .profil-text-user-login .user-login-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 130px;
+    height: 130px;
+    background: var(--gray-color);
+  }
+
+   .profil-text-user-login .user-login-img img{
+    max-width: 130px;
+    max-height: 130px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    object-fit: cover;
+   }
+  
+   .profil-username{
+    color: var(--white-smoke);
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 2px;
+   }
+  .profil-text-container .user-title{
+    text-align: center;
+    color: var(--gray-color);
+    font-size: 15px;
+   }
+  
+/* .profile-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--gray-color);
+}
+.profile-text .imgBox{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-text .imgBox img{
+    width: 100%;
+    max-height: 200px;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-text h2{
+    color: var(--gray-color);
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.4rem;
+}
+
+.profile-text h2 span{
+    font-size: 12px;
+    font-weight: 300;
+} */
+.contactInfo{
+    padding-top: 40px;
+}
+.cv-title{
+    color: var(--white-smoke);
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contactInfo ul {
+    position: relative;
+
+}
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer; 
+}
+
+.contactInfo ul li .cv-icon{
+    display: inline-block;
+    width: 30px;
+    color: var(--white-smoke);
+    font-size: 18px;
+}
+
+.contactInfo ul li span{
+    color: var(--gray-color);
+    font-weight: 300;
+}
+
+.contactInfo.education li{
+    margin-bottom: 15px;
+}
+.year{
+    color:  var(--gray-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+.description{
+    color:  var(--gray-color);
+    font-weight: 500;
+    font-size: 16px;
+}
+.contactInfo.education .school_name{
+    color:  var(--gray-color);
+    font-weight: 300;
+    font-size: 13px;
+}
+.contactInfo.language .text{
+    font-size: 16px;
+}
+.contactInfo.language .percent{
+    position: relative;
+    height:2px;
+    background: var(--dark-gray);
+    margin-top: 5px;
+}
+.contactInfo.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--blue-color);
+}
+
+
+
+
+.cv-container .right-side{
+    position: relative;
+    background: rgba(24,24,24,0.2);
+    padding: 40px;
+}
+.cv-about{
+    margin-bottom: 50px;
+}
+
+.cv-about:last-child{
+    margin-bottom: 0;
+}
+.cv-title2{
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.cv-about .cv-box{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px 0;
+} 
+.cv-about .cv-box .year-company{
+    min-width: 150px;
+}
+/* .cv-about .cv-box .year-company .year{
+    color: var(--p-color);
+} */
+.cv-about .cv-box .year-company .description{
+    font-size: 14px;
+}
+.cv-about .cv-box .text h4{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--white-smoke);
+}
+
+.skills .cv-box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skills .skill-name{
+    text-transform: capitalize;
+    color: var(--gray-color);
+    font-weight: 500;
+}
+.skills .percent{
+    position: relative;
+    height:2px;
+    background: var(--dark-gray);
+  }
+  .skills .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: var(--blue-color);
+  }
+
+  .interest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+  .interest ul li{
+    list-style: none;
+    color: var(--gray-color);
+    font-weight: 500;
+    margin: 10px 0;
+  }
+
+  .interest ul li  .fa{
+    font-size: 18px;
+    width: 20px;
+    color: var(--white-smoke);
+  }
+
+  /*Responsive*/
+  @media (max-width: 1000px) {
+    .cv-container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .interest ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .cv-about .cv-box{
+        flex-direction: column;
+    }
+    .cv-about .cv-box .year-company{
+        margin-bottom: 5px;
+    }
+    .interest ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills.cv-box{
+        grid-template-columns: repeat(1,1fr);
+    }
+  }
